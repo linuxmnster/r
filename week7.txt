@@ -1,0 +1,31 @@
+To Read a csv file (excel) in R
+print(getwd())
+getwd() -  a function that gets the working directory (current path we are working)
+setwd(string_path) - a function that change the path/directory as specified
+-----------------------------------------------------------------------------------------------------------
+data = read.csv(file_nave)
+print(data)
+
+read.csv(file_nave) - this function helps us to read and display the csv file (stored as a data frame)
+
+is.data.dataframe(var_name_that_stores_csv_file) - to check if it is a type of datafram or not
+ncol(var_name) - to find how many columns in the csv file/data frame
+nrow(var_name) - to find the total no.of rows in a csv file/data frame
+-------------------------------------------------------------------------------------------------------------
+max(var_name_that_stores_csv_file$column_name) -  to get the maximum value in a column of a excel sheet
+
+subset(data_frame, condition) - this function is used to filter the rows in a data frame/csv file
+subset(csv_data, column_name == "value") - checks for rows where the column_name has the value "value"
+details <- subset(csv_data, dept == "IT"&salary>600) - example
+details <- subset(csv_data, as.Date(column_name) > as.Date("yyyy-mm-dd") - example
+
+as.Date() - this function allows us to convert the date into a data type and we can compare dates
+-------------------------------------------------------------------------------------------------------------
+Writing into a csv file :
+
+data = read.csv("file_name.csv")
+details  = subset(csv_data, as.Date(start_date) > as.Date("2014-01-01") #filtering data
+write.csv(details, "output.csv") #created a file with filtered data
+--------------------------------------------------------------------------------------------------------------
+
+
