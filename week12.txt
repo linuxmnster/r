@@ -1,0 +1,5 @@
+iq = rnorm(40, 30, 2)
+iq = sort(iq)
+result = c(zeros and ones of 40)
+df = as.data.datafram(cbind(iq, results))
+print(df)

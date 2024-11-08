@@ -1,0 +1,17 @@
+pie chart:
+pie(values, labels) - pie function takes two parameters 
+                      1) values - thus defines the area that each part covers pic chart
+                      2) labels - these are the tags/labels that set along the values respectively
+
+values = c(23, 56, 20, 63)
+labels = c("l1", "l2", "l3", "l4")
+pei(values, labels)
+-------------------------------------------------------------------------------------------------------
+bar chart:
+barplot(data, xlab = "label1", ylab = "label2", main = "Bar-Chart")
+
+xlab - x-axis label
+ylab - y-axis label
+main - Title for the BarChart
+data - a vector with values
+--------------------------------------------------------------------------------------------------------
